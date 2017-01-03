@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive navigation</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+	<div class="row">
+
+<div class="col-sm-12 col-md-3">
+
+
+<div class="btn-group-vertical leftPropNav" role="group" aria-label="Property Navigation">
+      <a href="#" type="button" class="btn btn-primary">
+          <span class="glyphicon glyphicon-home"></span><span class="nameText">Overview</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-picture"></span><span class="nameText">Photos</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-facetime-video"></span><span class="nameText">Virtual Tour</span
+      </div>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="icomoon icon-care"></span><span class="nameText">Service Levels</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-cutlery"></span><span class="nameText">Dining Services</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="icomoon icon-wellness"></span><span class="nameText">Wellness Services</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="icomoon icon-active-living-2"></span><span class="nameText">Activities</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="icomoon icon-amenities"></span><span class="nameText">Amenities</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="icomoon icon-neighbourhood"></span><span class="nameText">Neighbourhood</span>
+      </a>
+      <a href="#" type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-map-marker"></span><span class="nameText">Map</span>
+      </a>
+      <a href="#" type="button" href="#" type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-star"></span><span class="nameText">Reviews &amp; Ratings</span>
+      </a>
+   </div>
+
+
+</div>
+	<div class="col-sm-12 col-md-9"><h2>Resize window size to see</h2><p>how it works</p></div>
+</div></div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function() {
+$(window).on('load resize', function(){
+    if ($(window).width() < 992) {
+   		$(".btn-group-vertical").addClass("btn-group btn-group-lg");
+   		$(".btn-group-vertical").removeClass("btn-group-vertical");
+		$(".leftPropNav .glyphicon").css({"padding": "5px", "font-size": "1.7em"});
+		$(".leftPropNav .icomoon").css({"padding": "5px", "font-size": "2.06em",});
+	}
+	else {
+		$(".btn-group").addClass("btn-group-vertical");
+   		$(".btn-group-vertical").removeClass("btn-group btn-group-lg");
+		$(".leftPropNav .glyphicon").css({"padding": "", "font-size": ""});
+		$(".leftPropNav .icomoon").css({"padding": "", "font-size": ""});
+	}
+});
+});
+</script>
+</body>
+</html>
